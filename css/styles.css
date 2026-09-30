@@ -772,3 +772,21 @@ a.contact__channel:hover { border-color: rgba(237, 139, 54, 0.5); transform: tra
 :root[data-theme="light"] .hero__photo {
   box-shadow: 0 0 0 5px rgba(194, 65, 12, 0.14), 0 8px 22px rgba(11, 37, 69, 0.18);
 }
+
+/* ---------- Seletor de idioma ---------- */
+.nav__utils { display: flex; align-items: center; gap: 10px; }
+.lang {
+  display: flex;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px; overflow: hidden;
+}
+.lang__btn {
+  padding: 9px 10px;
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.5px;
+  background: transparent; color: var(--muted);
+  border: 0; cursor: pointer;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+.lang__btn + .lang__btn { border-left: 1px solid var(--line-strong); }
+.lang__btn:hover { color: var(--text); }
+.lang__btn.is-active { background: var(--amber); color: var(--navy-deep); font-weight: 700; }
