@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>João Andrade — Desenvolvedor Júnior | Segurança da Informação &amp; GRC</title>
+  <meta name="description" content="João Andrade, desenvolvedor júnior com diferencial em Segurança da Informação e GRC. Auditor Líder ISO/IEC 27001:2022, tecnólogo em Defesa Cibernética. Java, Spring Boot, Python e SQL. Criador do eTreinamentos. Disponível para oportunidades e projetos freelance." />
+  <meta property="og:title" content="João Andrade — Desenvolvedor Júnior" />
+  <meta property="og:description" content="Backend seguro, código sólido e resultados mensuráveis. Java · Spring Boot · Python · SQL." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230B2545'/%3E%3Ctext x='32' y='42' font-family='Georgia, serif' font-size='28' font-weight='bold' fill='%23ED8B36' text-anchor='middle'%3EJA%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script>
+    /* aplica o tema salvo antes do primeiro paint (sem flash) */
+    try {
+      var t = localStorage.getItem("theme");
+      if (!t && window.matchMedia("(prefers-color-scheme: light)").matches) t = "light";
+      document.documentElement.setAttribute("data-theme", t || "dark");
+    } catch (e) {
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#inicio">Pular para o conteúdo</a>
+  <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#inicio" class="nav__brand">
+        <span class="nav__logo">JA</span>
+        <span class="nav__name">joão<span class="accent">.</span>andrade</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Navegação principal">
+        <a href="#sobre" class="nav__link"><span class="nav__num">01</span> Sobre</a>
+        <a href="#destaque" class="nav__link"><span class="nav__num">02</span> Projeto</a>
+        <a href="#projetos" class="nav__link"><span class="nav__num">03</span> Projetos</a>
+        <a href="#trajetoria" class="nav__link"><span class="nav__num">04</span> Trajetória</a>
+        <a href="#servicos" class="nav__link"><span class="nav__num">05</span> Serviços</a>
+        <a href="#contato" class="btn btn--primary btn--sm nav__cta">Fale comigo</a>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Alternar entre tema escuro e claro">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero__grid container">
+        <div class="hero__content reveal">
+          <div class="hero__head">
+            <img class="hero__photo" src="assets/joao.jpg" alt="Foto de João Andrade" />
+            <p class="eyebrow">// DESENVOLVEDOR JÚNIOR · SEGURANÇA DA INFORMAÇÃO</p>
+          </div>
+          <h1 class="hero__title">João Andrade</h1>
+          <p class="hero__subtitle">
+            Construo software com base sólida: <strong>backend seguro</strong>, código limpo e
+            resultados que dá para medir. Vim da área de
+            <strong>Treinamentos &amp; Desenvolvimento e GRC</strong> — mais de três anos entre
+            auditorias ISO, processos e pessoas — e trouxe dela o hábito de observar
+            primeiro e resolver com precisão.
+          </p>
+          <div class="hero__badges">
+            <span class="badge">Java</span>
+            <span class="badge">Spring Boot</span>
+            <span class="badge">Python</span>
+            <span class="badge">SQL</span>
+            <span class="badge">Next.js</span>
+          </div>
+          <div class="hero__actions">
+            <a href="#destaque" class="btn btn--primary">Ver projetos</a>
+            <a href="#contato" class="btn btn--ghost">Entrar em contato</a>
+          </div>
+          <div class="hero__social">
+            <a href="https://github.com/Joao-Andrade11" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.34.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11.1 11.1 0 0 1 5.78 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.26 5.66.41.36.78 1.06.78 2.14 0 1.54-.01 2.79-.01 3.17 0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/joaopedrosantosdeandrade/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+              LinkedIn
+            </a>
+            <span class="hero__location">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Niterói · RJ — disponível para remoto
+            </span>
+          </div>
+        </div>
+
+        <div class="hero__terminal reveal" aria-hidden="true">
+          <div class="terminal">
+            <div class="terminal__bar">
+              <span class="terminal__dot terminal__dot--r"></span>
+              <span class="terminal__dot terminal__dot--y"></span>
+              <span class="terminal__dot terminal__dot--g"></span>
+              <span class="terminal__title">owl.sys — perfil</span>
+            </div>
+            <pre class="terminal__body"><code>&gt; booting owl.sys...
+
+<span class="t-ok">[ OK ]</span> Developer profile loaded
+<span class="t-ok">[ OK ]</span> Security layer armed
+
+ROLE     : Desenvolvedor Junior
+EDGE     : Segurança da Informação
+STACK    : Java · Spring Boot · Python · SQL
+BUILDING : eTreinamentos (Next.js + PostgreSQL)
+STUDYING : Java &amp; POO <span class="t-dim">-&gt;</span> Full Stack · DevOps
+STATUS   : <span class="t-status">● ONLINE</span>
+
+&gt; awaiting next challenge<span class="t-cursor">█</span></code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__metrics container">
+        <div class="metric reveal">
+          <span class="metric__value">30s</span>
+          <span class="metric__label">para localizar um certificado <em>(antes: 10 min)</em></span>
+        </div>
+        <div class="metric reveal">
+          <span class="metric__value"><span class="count" data-target="78">0</span>%</span>
+          <span class="metric__label">de conclusão de treinamentos <em>(antes: 40%)</em></span>
+        </div>
+        <div class="metric reveal">
+          <span class="metric__value"><span class="count" data-target="3">0</span> semanas</span>
+          <span class="metric__label">do design à produção no eTreinamentos</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 01 SOBRE ============ -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <p class="section__tag reveal"><span>01</span>// SOBRE</p>
+        <div class="about">
+          <div class="about__text reveal">
+            <h2 class="section__title">Código seguro começa com<br />decisões bem observadas.</h2>
+            <p>
+              Sou desenvolvedor júnior com foco em <strong>backend e segurança da informação</strong>,
+              tecnólogo em <strong>Defesa Cibernética</strong> (Estácio). Trabalho com Java,
+              Spring Boot, Python e SQL e construo sistemas <em>secure by design</em> —
+              autenticação, autorização por papéis, testes automatizados e análise de
+              dependências desde o primeiro commit.
+            </p>
+            <p>
+              Minha origem é na área de <strong>Treinamentos &amp; Desenvolvimento e GRC</strong>:
+              mais de três anos na Microware Tecnologia de Informação, apoiando auditorias
+              <strong>ISO 9001, ISO/IEC 20000 e ISO/IEC 27001</strong> — certificado como
+              <strong>Auditor Líder ISO/IEC 27001:2022</strong>. Foi convivendo com processos
+              manuais que nasceu o <a href="#destaque" class="link-strong">eTreinamentos</a>,
+              sistema que desenvolvi do zero e que hoje está em produção, gerando
+              resultados mensuráveis.
+            </p>
+            <blockquote class="about__quote">
+              “Vê no escuro. Não pisca antes de decidir. Voa em silêncio.”
+            </blockquote>
+          </div>
+          <aside class="about__card reveal">
+            <div class="owl" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 18 L10 8 L22 13 M50 18 L54 8 L42 13" />
+                <path d="M32 10 C18 10 12 22 12 34 C12 48 20 56 32 56 C44 56 52 48 52 34 C52 22 46 10 32 10 Z" />
+                <circle cx="23" cy="30" r="6.5" /><circle cx="41" cy="30" r="6.5" />
+                <circle cx="23" cy="30" r="2.2" fill="currentColor" stroke="none" />
+                <circle cx="41" cy="30" r="2.2" fill="currentColor" stroke="none" />
+                <path d="M29 38 L32 43 L35 38" />
+              </svg>
+            </div>
+            <h3>Por que a coruja</h3>
+            <p>
+              Visão que enxerga o que passa despercebido, atenção total antes de agir e
+              presença silenciosa e certeira. É assim que penso segurança e código:
+              <strong>observar primeiro, atacar o problema com precisão</strong>.
+            </p>
+            <ul class="about__list">
+              <li>Backend seguro <span>(secure by design)</span></li>
+              <li>DevOps <span>— próximo passo</span></li>
+              <li>Full Stack <span>— interesse ativo</span></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 02 PROJETO EM DESTAQUE ============ -->
+    <section class="section section--alt" id="destaque">
+      <div class="container">
+        <p class="section__tag reveal"><span>02</span>// PROJETO EM DESTAQUE</p>
+        <div class="feature">
+          <div class="feature__info reveal">
+            <div class="feature__status"><span class="pulse-dot"></span> Em uso ativo · produção</div>
+            <h2 class="section__title">eTreinamentos</h2>
+            <p class="feature__desc">
+              Sistema web full-stack para <strong>gestão de certificações corporativas</strong>,
+              com OCR automático de certificados e alertas de vencimento. Desenvolvido solo —
+              do design à produção — em 3 semanas, a partir de uma dor real da área de
+              Treinamentos &amp; Desenvolvimento.
+            </p>
+            <ul class="feature__results">
+              <li>
+                <span class="feature__num">10 min → 30 s</span>
+                Tempo para localizar um certificado
+              </li>
+              <li>
+                <span class="feature__num">40% → 78%</span>
+                Taxa de conclusão de treinamentos
+              </li>
+            </ul>
+            <div class="hero__badges">
+              <span class="badge">Next.js</span>
+              <span class="badge">React</span>
+              <span class="badge">TypeScript</span>
+              <span class="badge">PostgreSQL</span>
+              <span class="badge">OCR</span>
+            </div>
+            <p class="feature__note">Projeto privado, em produção. Detalhes técnicos disponíveis mediante contato.</p>
+          </div>
+
+          <div class="feature__visual reveal" aria-hidden="true">
+            <div class="terminal">
+              <div class="terminal__bar">
+                <span class="terminal__dot terminal__dot--r"></span>
+                <span class="terminal__dot terminal__dot--y"></span>
+                <span class="terminal__dot terminal__dot--g"></span>
+                <span class="terminal__title">etreinamentos — resultados</span>
+              </div>
+              <pre class="terminal__body"><code>&gt; SELECT tempo_busca FROM antes;
+<span class="t-warn">10 min</span>  <span class="t-dim">-- processo manual</span>
+
+&gt; SELECT tempo_busca FROM agora;
+<span class="t-good">30 s</span>    <span class="t-dim">-- OCR + índice</span>
+
+&gt; SELECT conclusao_treinamentos;
+antes : <span class="t-warn">40%</span>
+agora : <span class="t-good">78%</span>  <span class="t-dim">-- alertas de vencimento</span>
+
+&gt; status: <span class="t-status">produção · uso ativo</span> █</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 03 PROJETOS ============ -->
+    <section class="section" id="projetos">
+      <div class="container">
+        <p class="section__tag reveal"><span>03</span>// PROJETOS</p>
+        <h2 class="section__title reveal">Projetos de estudo e evolução técnica</h2>
+        <p class="section__lead reveal">Cada um marcou um passo no caminho — da fundamentação em segurança ao tempo real.</p>
+
+        <!-- Round Carousel (port vanilla do componente Originkit) -->
+        <div class="rc reveal" id="roundCarousel">
+          <div class="rc__viewport" id="rcViewport" aria-label="Carrossel 3D de projetos" role="group">
+            <div class="rc__tilt">
+              <div class="rc__ring" id="rcRing">
+
+                <div class="rc__slide" style="--rc-i:0">
+                  <div class="rc__face rc__face--front">
+                    <article class="rc__card">
+                      <div class="rc__card-head">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="rc__icon" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8"/></svg>
+                        <span class="rc__status"><span class="pulse-dot"></span>produção</span>
+                      </div>
+                      <h3 class="rc__title">eTreinamentos</h3>
+                      <p class="rc__desc">Gestão de certificações corporativas com OCR automático e alertas de vencimento.</p>
+                      <ul class="rc__tags"><li>Next.js</li><li>TypeScript</li><li>PostgreSQL</li></ul>
+                      <span class="rc__metric">10 min → 30 s</span>
+                    </article>
+                  </div>
+                </div>
+
+                <div class="rc__slide" style="--rc-i:1">
+                  <div class="rc__face rc__face--front">
+                    <article class="rc__card">
+                      <div class="rc__card-head">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="rc__icon" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/><circle cx="12" cy="15.5" r="1.4" fill="currentColor" stroke="none"/></svg>
+                        <a class="rc__repo" href="https://github.com/Joao-Andrade11/secure-task-api" target="_blank" rel="noopener">repo ↗</a>
+                      </div>
+                      <h3 class="rc__title">secure-task-api</h3>
+                      <p class="rc__desc">REST API com autenticação, autorização por papéis, testes, SBOM e análise de segurança.</p>
+                      <ul class="rc__tags"><li>Java 25</li><li>Spring Boot</li><li>JWT</li><li>SBOM</li></ul>
+                      <span class="rc__metric">secure by design</span>
+                    </article>
+                  </div>
+                </div>
+
+                <div class="rc__slide" style="--rc-i:2">
+                  <div class="rc__face rc__face--front">
+                    <article class="rc__card">
+                      <div class="rc__card-head">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="rc__icon" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 4v"M9 4v16M15 4v16"/></svg>
+                        <a class="rc__repo" href="https://github.com/Joao-Andrade11/collab-board-api" target="_blank" rel="noopener">repo ↗</a>
+                      </div>
+                      <h3 class="rc__title">collab-board-api</h3>
+                      <p class="rc__desc">Kanban colaborativo em tempo real com WebSocket/STOMP e autenticação JWT.</p>
+                      <ul class="rc__tags"><li>Java</li><li>WebSocket</li><li>JWT</li><li>PostgreSQL</li></ul>
+                      <span class="rc__metric">tempo real</span>
+                    </article>
+                  </div>
+                </div>
+
+                <div class="rc__slide" style="--rc-i:3">
+                  <div class="rc__face rc__face--front">
+                    <article class="rc__card">
+                      <div class="rc__card-head">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" class="rc__icon" aria-hidden="true"><path d="M32 10 C18 10 12 22 12 34 C12 48 20 56 32 56 C44 56 52 48 52 34 C52 22 46 10 32 10 Z"/><circle cx="23" cy="30" r="6"/><circle cx="41" cy="30" r="6"/><circle cx="23" cy="30" r="2" fill="currentColor" stroke="none"/><circle cx="41" cy="30" r="2" fill="currentColor" stroke="none"/></svg>
+                        <span class="rc__kicker">diferencial</span>
+                      </div>
+                      <h3 class="rc__title">Segurança da Informação</h3>
+                      <p class="rc__desc">Segurança desde o primeiro commit: autenticação, papéis, dependências auditadas.</p>
+                      <ul class="rc__tags"><li>RBAC</li><li>SBOM</li><li>Testes</li></ul>
+                      <span class="rc__metric">vê no escuro</span>
+                    </article>
+                  </div>
+                </div>
+
+                <div class="rc__slide" style="--rc-i:4">
+                  <div class="rc__face rc__face--front">
+                    <article class="rc__card">
+                      <div class="rc__card-head">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="rc__icon" aria-hidden="true"><path d="M12 4 2 9l10 5 10-5-10-5z"/><path d="M6 11.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5"/></svg>
+                        <span class="rc__kicker">estudos</span>
+                      </div>
+                      <h3 class="rc__title">Java &amp; POO → DevOps</h3>
+                      <p class="rc__desc">Fundamentos sólidos de orientação a objetos hoje; pipelines e infraestrutura amanhã.</p>
+                      <ul class="rc__tags"><li>Java</li><li>Spring Boot</li><li>DevOps</li></ul>
+                      <span class="rc__metric">always learning</span>
+                    </article>
+                  </div>
+                </div>
+
+                <div class="rc__slide" style="--rc-i:5">
+                  <div class="rc__face rc__face--front">
+                    <article class="rc__card">
+                      <div class="rc__card-head">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="rc__icon" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 11-13h-7l1-7z"/></svg>
+                        <span class="rc__kicker">freelance</span>
+                      </div>
+                      <h3 class="rc__title">Disponível para projetos</h3>
+                      <p class="rc__desc">APIs, sistemas web e automações com escopo claro e entrega combinada.</p>
+                      <ul class="rc__tags"><li>APIs</li><li>Sistemas web</li><li>Automações</li></ul>
+                      <a class="rc__metric rc__metric--link" href="#contato">pedir orçamento →</a>
+                    </article>
+                  </div>
+                </div>
+
+                <div class="rc__slide" style="--rc-i:6">
+                  <div class="rc__face rc__face--front">
+                    <article class="rc__card">
+                      <div class="rc__card-head">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="rc__icon" aria-hidden="true"><path d="m8 6-6 6 6 6"/><path d="m16 6 6 6-6 6"/></svg>
+                        <span class="rc__kicker">você está nele</span>
+                      </div>
+                      <h3 class="rc__title">Este portfólio</h3>
+                      <p class="rc__desc">Landing page construída do zero: HTML5, CSS3 e JavaScript puros — do layout aos componentes 3D, tudo escrito à mão.</p>
+                      <ul class="rc__tags"><li>HTML5</li><li>CSS3</li><li>JS Vanilla</li></ul>
+                      <span class="rc__metric">0 dependências</span>
+                    </article>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="rc__controls">
+            <button class="rc__btn" id="rcPrev" aria-label="Girar para o card anterior">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <span class="rc__hint">arraste para girar · clique nas setas</span>
+            <button class="rc__btn" id="rcNext" aria-label="Girar para o próximo card">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="rc__links reveal">
+          <a href="https://github.com/Joao-Andrade11/secure-task-api" target="_blank" rel="noopener">secure-task-api ↗</a>
+          <a href="https://github.com/Joao-Andrade11/collab-board-api" target="_blank" rel="noopener">collab-board-api ↗</a>
+          <a href="https://github.com/Joao-Andrade11" target="_blank" rel="noopener">perfil completo no GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 04 TRAJETÓRIA ============ -->
+    <section class="section section--alt" id="trajetoria">
+      <div class="container">
+        <p class="section__tag reveal"><span>04</span>// TRAJETÓRIA &amp; ESTUDOS</p>
+        <h2 class="section__title reveal">De T&amp;D ao desenvolvimento,<br />sem perder o foco em pessoas.</h2>
+
+        <div class="timeline">
+          <div class="timeline__item reveal">
+            <div class="timeline__marker">01</div>
+            <div class="timeline__content">
+              <h3>2022 — 2024 · Tecnólogo em Defesa Cibernética</h3>
+              <p>
+                Estácio. A base em segurança, redes e gestão de riscos — o terreno onde
+                o desenvolvedor nasceu.
+              </p>
+            </div>
+          </div>
+          <div class="timeline__item reveal">
+            <div class="timeline__marker">02</div>
+            <div class="timeline__content">
+              <h3>2023 — 2024 · Microware — Aprendiz (T&amp;D)</h3>
+              <p>
+                Primeiros passos na estruturação de treinamentos corporativos: organização e
+                execução de treinamentos internos, materiais didáticos, apoio às auditorias
+                ISO 9001 e 20000 e primeiro contato com Power Automate e Bizagi.
+              </p>
+            </div>
+          </div>
+          <div class="timeline__item reveal">
+            <div class="timeline__marker">03</div>
+            <div class="timeline__content">
+              <h3>2024 — atual · Microware — Analista de Treinamento e Desenvolvimento</h3>
+              <p>
+                Automações com Power Automate e Bizagi que reduziram em ~40% o tempo de
+                atividades manuais; apoio a auditorias ISO 9001, 20000 e 27001; análise de
+                KPIs em plataformas EAD e modelagem de processos em BPMN. Foi aqui que
+                desenvolvi e coloquei em produção o <strong>eTreinamentos</strong>.
+              </p>
+            </div>
+          </div>
+          <div class="timeline__item reveal">
+            <div class="timeline__marker">04</div>
+            <div class="timeline__content">
+              <h3>Atual · Desenvolvedor Júnior</h3>
+              <p>
+                APIs com Java 25 e Spring Boot — autenticação, autorização por papéis, testes
+                automatizados, SBOM — e full-stack com Next.js e PostgreSQL. Evolução aberta
+                no GitHub.
+              </p>
+            </div>
+          </div>
+          <div class="timeline__item timeline__item--next reveal">
+            <div class="timeline__marker">→</div>
+            <div class="timeline__content">
+              <h3>Próximo passo</h3>
+              <p>
+                Aprofundando Java &amp; POO com Spring Boot, com interesse ativo em evoluir para
+                <strong>Full Stack</strong> e, na sequência, <strong>DevOps</strong> — cuidar do
+                código da interface à produção.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="certs reveal">
+          <div class="certs__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/><path d="m9 12 2 2 4-4"/></svg>
+            <div><strong>Auditor Líder ISO/IEC 27001:2022</strong><span>certificação</span></div>
+          </div>
+          <div class="certs__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8"/></svg>
+            <div><strong>Prompt Engineering no ChatGPT</strong><span>certificação</span></div>
+          </div>
+          <div class="certs__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 4 2 9l10 5 10-5-10-5z"/><path d="M6 11.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5"/></svg>
+            <div><strong>Tecnólogo em Defesa Cibernética · Estácio</strong><span>2022 — 2024</span></div>
+          </div>
+        </div>
+
+        <div class="stack reveal" id="stack">
+          <h3 class="stack__title">Stack &amp; ferramentas</h3>
+          <div class="stack__group">
+            <span class="stack__label">Back-end</span>
+            <span class="chip">Java</span><span class="chip">Spring Boot</span><span class="chip">Python</span>
+          </div>
+          <div class="stack__group">
+            <span class="stack__label">Front-end</span>
+            <span class="chip">React</span><span class="chip">Next.js</span><span class="chip">TypeScript</span>
+          </div>
+          <div class="stack__group">
+            <span class="stack__label">Dados</span>
+            <span class="chip">PostgreSQL</span><span class="chip">SQL</span>
+          </div>
+          <div class="stack__group">
+            <span class="stack__label">Ferramentas</span>
+            <span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Power Automate</span><span class="chip">Bizagi · BPMN</span>
+          </div>
+          <div class="stack__group">
+            <span class="stack__label">Em estudo</span>
+            <span class="chip chip--study">Full Stack</span><span class="chip chip--study">DevOps</span><span class="chip chip--study">POO avançada</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ KINETIC BAND (port vanilla — Originkit Appear Text) ============ -->
+    <div class="kt" id="kineticBand" aria-hidden="true">
+      <div class="kt__zoom" id="ktZoom"></div>
+    </div>
+
+    <!-- ============ 05 SERVIÇOS ============ -->
+    <section class="section" id="servicos">
+      <div class="container">
+        <p class="section__tag reveal"><span>05</span>// SERVIÇOS · FREELANCE</p>
+        <h2 class="section__title reveal">Precisa tirar uma ideia do papel?</h2>
+        <p class="section__lead reveal">
+          Além das oportunidades formais, atuo como freelancer para projetos enxutos, com
+          comunicação clara e entrega combinada desde o início.
+        </p>
+
+        <div class="services">
+          <article class="service reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="service__icon" aria-hidden="true"><path d="M4 17l6-6-6-6M12 19h8"/></svg>
+            <h3>APIs &amp; back-end</h3>
+            <p>APIs REST com Java/Spring Boot ou Python: autenticação, integrações e regras de negócio, com segurança desde o design.</p>
+          </article>
+          <article class="service reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="service__icon" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8"/></svg>
+            <h3>Sistemas web sob medida</h3>
+            <p>Painéis, ferramentas internas e sistemas de gestão com Next.js/React e banco de dados — como o eTreinamentos.</p>
+          </article>
+          <article class="service reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="service__icon" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 11-13h-7l1-7z"/></svg>
+            <h3>Automações &amp; scripts</h3>
+            <p>Automatizo tarefas repetitivas da sua operação com Python, Power Automate e Bizagi: leitura de documentos, planilhas, aprovações e integrações entre sistemas.</p>
+          </article>
+        </div>
+
+        <div class="process reveal">
+          <h3 class="process__title">Como funciona</h3>
+          <ol class="process__steps">
+            <li><span class="process__num">1</span><strong>Briefing</strong>Entendo o problema e o resultado esperado.</li>
+            <li><span class="process__num">2</span><strong>Proposta</strong>Escopo, prazo e valor — por escrito e sem surpresas.</li>
+            <li><span class="process__num">3</span><strong>Desenvolvimento</strong>Entregas incrementais com check-ins regulares.</li>
+            <li><span class="process__num">4</span><strong>Entrega</strong>Código documentado + período de suporte.</li>
+          </ol>
+          <a href="#contato" class="btn btn--primary">Pedir orçamento</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 06 CONTATO ============ -->
+    <section class="section section--alt" id="contato">
+      <div class="container">
+        <p class="section__tag reveal"><span>06</span>// CONTATO</p>
+        <div class="contact">
+          <div class="contact__info reveal">
+            <h2 class="section__title">Vamos conversar.</h2>
+            <p>
+              Se você recruta e procura um júnior com base sólida e diferencial em segurança —
+              ou se precisa de um projeto freelance bem executado — me escreva.
+              Respondo rápido.
+            </p>
+            <div class="contact__channels">
+              <a class="contact__channel" href="https://www.linkedin.com/in/joaopedrosantosdeandrade/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+                <span><strong>LinkedIn</strong>joaopedrosantosdeandrade</span>
+              </a>
+              <a class="contact__channel" href="https://github.com/Joao-Andrade11" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.34.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11.1 11.1 0 0 1 5.78 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.26 5.66.41.36.78 1.06.78 2.14 0 1.54-.01 2.79-.01 3.17 0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                <span><strong>GitHub</strong>Joao-Andrade11</span>
+              </a>
+              <a class="contact__channel" href="mailto:joao.pandrade09@gmail.com">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="20" height="20" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+                <span><strong>E-mail</strong>joao.pandrade09@gmail.com</span>
+              </a>
+              <a class="contact__channel" href="https://wa.me/5521986276290" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/></svg>
+                <span><strong>WhatsApp</strong>+55 21 98627-6290</span>
+              </a>
+            </div>
+            <p class="contact__location">Niterói · RJ — disponível para vagas remotas em todo o Brasil.</p>
+          </div>
+
+          <form class="form reveal" id="contactForm">
+            <div class="form__row">
+              <div class="form__field">
+                <label for="fName">Nome</label>
+                <input type="text" id="fName" name="name" required placeholder="Seu nome" autocomplete="name" />
+              </div>
+              <div class="form__field">
+                <label for="fEmail">E-mail</label>
+                <input type="email" id="fEmail" name="email" required placeholder="voce@empresa.com" autocomplete="email" />
+              </div>
+            </div>
+            <div class="form__field">
+              <label for="fType">Motivo do contato</label>
+              <select id="fType" name="type">
+                <option value="Oportunidade de trabalho">Oportunidade de trabalho (recrutamento)</option>
+                <option value="Projeto freelance">Projeto freelance</option>
+                <option value="Outro assunto">Outro assunto</option>
+              </select>
+            </div>
+            <div class="form__field">
+              <label for="fMsg">Mensagem</label>
+              <textarea id="fMsg" name="message" rows="5" required placeholder="Conte um pouco sobre a oportunidade ou projeto..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block">Enviar mensagem</button>
+            <p class="form__hint">O envio abre seu aplicativo de e-mail com tudo preenchido — nada é armazenado neste site.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2026</span> João Andrade — construído à mão, sem frameworks.</p>
+      <div class="footer__links">
+        <a href="https://github.com/Joao-Andrade11" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/joaopedrosantosdeandrade/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#inicio">Voltar ao topo ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*~
+
+# Este projeto é 100% estático: sem node_modules, sem build, sem segredos.
+# Se um dia virar projeto Next.js, adicione:
+# node_modules/
+# .next/
+# .env
