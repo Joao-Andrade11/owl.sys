@@ -118,7 +118,7 @@ agora : <span class="t-good">78%</span>  <span class="t-dim">-- expiration alert
       "ph.msg": "Tell me a bit about the opportunity or project...",
       "form.send": "Send message",
       "form.hint": "Submitting opens your e-mail app with everything filled in — nothing is stored on this site.",
-      "foot.p": `© <span id="year">2026</span> João Andrade — hand-built, no frameworks.`,
+      "foot.p": `© <span id="year">2026</span> João Andrade — designed and developed by me, from layout to deploy.`,
       "foot.top": "Back to top ↑",
     },
     es: {
@@ -235,7 +235,7 @@ agora : <span class="t-good">78%</span>  <span class="t-dim">-- alertas de venci
       "ph.msg": "Cuéntame un poco sobre la oportunidad o proyecto...",
       "form.send": "Enviar mensaje",
       "form.hint": "El envío abre tu aplicación de correo con todo completado — nada se almacena en este sitio.",
-      "foot.p": `© <span id="year">2026</span> João Andrade — construido a mano, sin frameworks.`,
+      "foot.p": `© <span id="year">2026</span> João Andrade — diseñado y desarrollado por mí, del layout al deploy.`,
       "foot.top": "Volver arriba ↑",
     },
   };
