@@ -175,7 +175,12 @@ document.getElementById("year").textContent = new Date().getFullYear();
   };
   apply();
 
+  /* pausa o loop quando o carrossel sai da tela */
+  let inView = true;
+  new IntersectionObserver(([e]) => { inView = e.isIntersecting; }, { threshold: 0 }).observe(viewport);
+
   function draw(now) {
+    if (!inView) { last = 0; requestAnimationFrame(draw); return; }
     const dt = last ? (now - last) / 1000 : 0;
     last = now;
     const f = Math.min(dt, 0.1);
@@ -406,10 +411,10 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
     const GLOW_LAYERS = [
       { blur: 8, opacity: 0.5, reach: 0.3 },
-      { blur: 15, opacity: 0.3, reach: 0.6 },
-      { blur: 57, opacity: 0.18, reach: 1 },
+      { blur: 14, opacity: 0.3, reach: 0.6 },
+      { blur: 26, opacity: 0.18, reach: 1 },
     ];
-    const MAX_GLOW_BLUR = 57;
+    const MAX_GLOW_BLUR = 26;
     const MAX_GLOW_REACH = 36;
     const EDGE_COPIES = 2;
 
@@ -455,7 +460,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
       return (Math.atan2(pt[0] - w / 2, h / 2 - pt[1]) * 180) / Math.PI;
     }
 
-    const ARC_SAMPLES = 24;
+    const ARC_SAMPLES = 18;
     const MIN_ARC = 0.015;
 
     function buildArc(lap, lengthPct, w, h, color) {
@@ -567,6 +572,12 @@ document.getElementById("year").textContent = new Date().getFullYear();
       }).observe(root);
     }
 
+    /* pausa o loop quando o terminal sai da tela */
+    let inView = true;
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(([e]) => { inView = e.isIntersecting; }, { threshold: 0 }).observe(root);
+    }
+
     function setArcs(lapVal) {
       groupA.style.setProperty("--arc", buildArc(lapVal, BORDER_SIZE, w, h, COLOR));
       groupB.style.setProperty("--arc", buildArc(lapVal + 0.5, BORDER_SIZE, w, h, COLOR));
@@ -576,8 +587,9 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
     /* ---------- loop (continuous) ---------- */
     let last = performance.now();
-    let corner = 0, stepT = 0;
+    let corner = 0, stepT = 0, tick = false;
     function frame(now) {
+      if (!inView) { last = now; requestAnimationFrame(frame); return; }
       const dt = Math.min(0.05, Math.max(0, (now - last) / 1000));
       last = now;
       const s = Math.max(0, Math.min(20, SPEED));
@@ -593,7 +605,8 @@ document.getElementById("year").textContent = new Date().getFullYear();
         const fh = h > 0 ? h : 100;
         const from = cornerLap(corner, fw, fh);
         const to = cornerLap(corner + 1, fw, fh);
-        setArcs(from + (to - from) * eased);
+        tick = !tick;
+        if (tick) setArcs(from + (to - from) * eased);
       }
       requestAnimationFrame(frame);
     }
