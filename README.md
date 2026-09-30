@@ -25,9 +25,9 @@ portfolio/
 **Opção A — Vercel/Netlify:** arraste a pasta `portfolio/` no painel deles. Pronto.
 
 **Opção B — GitHub Pages:**
-1. Crie um repositório chamado **`owl.sys`** (público, sem README inicial) e suba os arquivos.
+1. Crie um repositório (ex.: `portfolio`) e suba os arquivos.
 2. Settings → Pages → Source: branch `main`, pasta `/ (root)` → Save.
-3. Seu site ficará em `https://joao-andrade11.github.io/owl.sys/`.
+3. Seu site ficará em `https://joao-andrade11.github.io/portfolio/`.
 
 ## Rodar localmente
 
