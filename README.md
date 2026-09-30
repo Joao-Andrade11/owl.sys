@@ -1,51 +1,75 @@
-# Portfolio — João Andrade
+# owl.sys 🦉 — Portfólio de João Andrade
 
-Landing page profissional, estática e sem frameworks: **HTML + CSS + JavaScript puros**.
-Feita para recrutadores (vagas) e para clientes de freelance (projetos).
+> **No ar:** https://joao-andrade11.github.io/owl.sys/
 
-## Estrutura
+Landing page profissional **100% estática** (HTML5 + CSS3 + JavaScript vanilla),
+com **zero dependências** e nenhum framework. Construída à mão — do layout aos
+componentes 3D.
+
+## ✨ Destaques
+
+- 🌐 **Trilíngue** (PT · EN · ES) com seletor na navbar, preferência salva e SEO traduzido
+- 🌗 **Tema claro/escuro** com respeito a `prefers-color-scheme`
+- 🌀 **Carrossel 3D** de projetos com arraste, inércia e setas
+- ✨ **Faixa de tipografia cinética** — “Code secure · Build solid”
+- 🔆 **Neon border** com glow âmbar percorrendo os terminais
+- ⚡ **Animações otimizadas**: pausam fora da tela, blur reduzido, update ~30fps
+- ♿ **Acessível**: skip-link, aria-labels traduzidas, `prefers-reduced-motion`, contraste WCAG AA
+- 📱 **Responsivo** do celular ao desktop
+
+## 🧩 Componentes (Originkit, portados para vanilla)
+
+| Componente | Onde vive |
+|---|---|
+| **Round Carousel** | Seção 03 — anel 3D com os projetos |
+| **Appear Text** (KineticTextGrid) | Faixa-manifesto entre as seções 04 e 05 |
+| **Neon Border** | Terminais do hero e do eTreinamentos |
+
+Os ports mantêm a matemática/física dos originais (raio do anel por `360/n`,
+inércia com decaimento 0.94, gradientes cônicos amostrados no perímetro,
+easings por Newton-Raphson) — sem React, sem framer-motion.
+
+## 🗂️ Estrutura
 
 ```
-portfolio/
-├── index.html      → todo o conteúdo
-├── css/styles.css  → visual (paleta navy/amber do próprio GitHub)
-├── js/main.js      → menu, animações e formulário
-└── README.md
+owl.sys/
+├── index.html                 → conteúdo (PT é a fonte; chaves data-i18n)
+├── css/styles.css             → identidade visual + temas claro/escuro
+├── js/
+│   ├── main.js                → nav, carrossel, kinetic, neon, tema, formulário
+│   └── i18n.js                → dicionários EN/ES + seletor de idioma
+├── assets/joao.jpg            → foto do hero
+└── .github/workflows/static.yml → deploy automático (GitHub Pages)
 ```
 
-## ⚙️ Configuração
-
-- **Contato** (e-mail do formulário e WhatsApp) já configurado em `SITE_CONFIG` no `js/main.js`:
-  `joao.pandrade09@gmail.com` / `+55 21 98627-6290`.
-- **Trajetória** preenchida com os dados do LinkedIn (Microware, Estácio, certificações).
-- **Foto (opcional)** — dá para adicionar sua foto no hero ou no "Sobre" se quiser.
-
-## Publicar (grátis, em 2 minutos)
-
-**Opção A — Vercel/Netlify:** arraste a pasta `portfolio/` no painel deles. Pronto.
-
-**Opção B — GitHub Pages:**
-1. Crie um repositório (ex.: `portfolio`) e suba os arquivos.
-2. Settings → Pages → Source: branch `main`, pasta `/ (root)` → Save.
-3. Seu site ficará em `https://joao-andrade11.github.io/portfolio/`.
-
-## Rodar localmente
+## 🚀 Rodar localmente
 
 ```bash
-cd portfolio
 python3 -m http.server 8080
 # abra http://localhost:8080
 ```
 
-## Personalização rápida
+## 🌍 Publicação
+
+Deploy automático via **GitHub Pages** (GitHub Actions): cada `git push` em
+`main` publica o site em ~1 minuto, sem build (arquivos estáticos).
+
+## ⚙️ Personalização rápida
 
 | O quê | Onde |
 |---|---|
-| Textos e seções | `index.html` |
-| Cores (paleta navy/amber/teal) | variáveis `:root` no topo de `css/styles.css` |
-| E-mail do formulário | `SITE_CONFIG` em `js/main.js` |
+| E-mail / WhatsApp do formulário | `SITE_CONFIG` em `js/main.js` |
+| Textos PT | `index.html` |
+| Traduções EN/ES | `js/i18n.js` |
+| Cores da marca (navy/âmbar/teal) | variáveis `:root` em `css/styles.css` |
 
-## Seções
+## 📬 Contato
 
-01 Sobre · 02 Projeto em destaque (eTreinamentos) · 03 Projetos ·
-04 Trajetória & Estudos · 05 Serviços/Freelance · 06 Contato
+- **E-mail:** joao.pandrade09@gmail.com
+- **WhatsApp:** +55 21 98627-6290
+- **LinkedIn:** [joaopedrosantosdeandrade](https://www.linkedin.com/in/joaopedrosantosdeandrade/)
+- **GitHub:** [Joao-Andrade11](https://github.com/Joao-Andrade11)
+
+---
+
+*Vê no escuro. Não pisca antes de decidir. Voa em silêncio.* 🦉
