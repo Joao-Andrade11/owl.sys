@@ -198,6 +198,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
       }
     }
     apply();
+    updateInert();
     requestAnimationFrame(draw);
   }
   requestAnimationFrame(draw);
@@ -251,6 +252,26 @@ document.getElementById("year").textContent = new Date().getFullYear();
   };
   document.getElementById("rcNext").addEventListener("click", () => goTo(frontIndex() + 1));
   document.getElementById("rcPrev").addEventListener("click", () => goTo(frontIndex() - 1));
+
+  /* Teclado: setas giram o anel quando o viewport está focado */
+  viewport.setAttribute("tabindex", "0");
+  viewport.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowRight") { goTo(frontIndex() + 1); e.preventDefault(); }
+    if (e.key === "ArrowLeft")  { goTo(frontIndex() - 1); e.preventDefault(); }
+  });
+
+  /* Cards fora da frente saem da ordem de tabulação (inert):
+     teclado/leitor de tela só alcançam links visíveis */
+  let lastFront = -1;
+  function updateInert() {
+    const front = ((Math.round(-rot / angle) % count) + count) % count;
+    if (front === lastFront) return;
+    lastFront = front;
+    slides.forEach((s, i) => {
+      if (i === front) s.removeAttribute("inert");
+      else s.setAttribute("inert", "");
+    });
+  }
 })();
 
 /* ============================================================

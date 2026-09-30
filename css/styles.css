@@ -788,3 +788,10 @@ a.contact__channel:hover { border-color: rgba(237, 139, 54, 0.5); transform: tra
 .lang__btn + .lang__btn { border-left: 1px solid var(--line-strong); }
 .lang__btn:hover { color: var(--text); }
 .lang__btn.is-active { background: var(--amber); color: var(--navy-deep); font-weight: 700; }
+
+/* ---------- Fases 1-3: fallback sem JS, foco e a11y ---------- */
+.no-js .reveal { opacity: 1 !important; transform: none !important; }
+.no-js .progress-bar { display: none; }
+main:focus { outline: none; }
+.rc__viewport:focus-visible { outline: 2px solid var(--amber, #ed8b36); outline-offset: 6px; }
+.contact__cv { display: inline-flex; margin: 16px 0 6px; }

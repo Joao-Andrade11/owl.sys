@@ -13,8 +13,8 @@
       "a11y.theme": "Toggle dark/light theme", "a11y.menu": "Open menu",
       "a11y.carousel": "3D projects carousel", "a11y.prev": "Rotate to previous card", "a11y.next": "Rotate to next card",
       "hero.eyebrow": "// JUNIOR DEVELOPER · INFORMATION SECURITY",
-      "hero.subtitle": `I build software on a solid foundation: <strong>secure backend</strong>, clean code and measurable results. I come from <strong>Training &amp; Development and GRC</strong> — over three years among ISO audits, processes and people — and from there I brought the habit of observing first and solving with precision.`,
-      "hero.cta1": "View projects", "hero.cta2": "Get in touch",
+      "hero.subtitle": `I build software on a solid foundation: <strong>secure backend</strong>, clean code and measurable results. I come from <strong>Training &amp; Development and GRC</strong> — nearly four years among ISO audits, processes and people — and from there I brought the habit of observing first and solving with precision.`,
+      "hero.cta1": "View projects", "hero.cta2": "Get in touch", "hero.cta3": "Download résumé ↓",
       "hero.loc": "Niterói · RJ — open to remote work",
       "term.hero": `&gt; booting owl.sys...
 
@@ -35,7 +35,7 @@ STATUS   : <span class="t-status">● ONLINE</span>
       "sobre.tag": "ABOUT",
       "sobre.title": `Secure code begins with<br />well-observed decisions.`,
       "sobre.p1": `I am a junior developer focused on <strong>backend and information security</strong>, with a degree in <strong>Cyber Defense</strong> (Estácio). I work with Java, Spring Boot, Python and SQL, building <em>secure by design</em> systems — authentication, role-based authorization, automated tests and dependency analysis from the very first commit.`,
-      "sobre.p2": `My background is in <strong>Training &amp; Development and GRC</strong>: over three years at Microware Tecnologia de Informação, supporting <strong>ISO 9001, ISO/IEC 20000 and ISO/IEC 27001</strong> audits — certified as <strong>ISO/IEC 27001:2022 Lead Auditor</strong>. Living with manual processes is how <a href="#destaque" class="link-strong">eTreinamentos</a> was born — a system I built from scratch, now in production delivering measurable results.`,
+      "sobre.p2": `My background is in <strong>Training &amp; Development and GRC</strong>: nearly four years at Microware Tecnologia de Informação, supporting <strong>ISO 9001, ISO/IEC 20000 and ISO/IEC 27001</strong> audits — certified as <strong>ISO/IEC 27001:2022 Lead Auditor</strong>. Living with manual processes is how <a href="#destaque" class="link-strong">eTreinamentos</a> was born — a system I built from scratch, now in production delivering measurable results.`,
       "sobre.quote": "“Sees in the dark. Doesn't blink before deciding. Flies in silence.”",
       "owl.title": "Why the owl",
       "owl.p": `Vision that sees what goes unnoticed, full attention before acting, silent and precise presence. That is how I think about security and code: <strong>observe first, strike the problem with precision</strong>.`,
@@ -65,26 +65,17 @@ agora : <span class="t-good">78%</span>  <span class="t-dim">-- expiration alert
       "s2.metric": "secure by design",
       "s3.desc": "Real-time collaborative Kanban with WebSocket/STOMP and JWT authentication.",
       "s3.metric": "real time",
-      "s4.kicker": "differentiator", "s4.title": "Information Security",
-      "s4.desc": "Security from the first commit: authentication, roles, audited dependencies.",
-      "s4.metric": "sees in the dark",
-      "s5.kicker": "studies", "s5.title": "Java & OOP → DevOps",
-      "s5.desc": "Solid object-oriented fundamentals today; pipelines and infrastructure tomorrow.",
-      "s5.metric": "always learning",
-      "s6.kicker": "freelance", "s6.title": "Available for projects",
-      "s6.desc": "APIs, web systems and automations with clear scope and agreed delivery.",
-      "s6.cta": "request a quote →",
       "s7.kicker": "you're on it", "s7.title": "This portfolio",
-      "s7.desc": "Landing page built from scratch: pure HTML5, CSS3 and JavaScript — from layout to 3D components, all hand-written.",
+      "s7.desc": "Landing page in pure HTML5, CSS3 and JavaScript, with PT/EN/ES i18n; the 3D carousel, neon border and kinetic band are hand-written ports of the open-source Originkit kit.",
       "s7.metric": "0 dependencies",
       "proj.hint": "drag to rotate · click the arrows", "proj.profile": "full GitHub profile",
       "traj.tag": "JOURNEY & STUDIES",
       "traj.title": `From T&amp;D to development,<br />without losing focus on people.`,
-      "t1.h": "2022 — 2024 · Cyber Defense Technologist",
+      "t1.h": "Jan 2022 — Dec 2024 · Cyber Defense Technologist",
       "t1.p": "Estácio. The foundation in security, networks and risk management — the ground where the developer was born.",
-      "t2.h": "2023 — 2024 · Microware — Apprentice (T&D)",
+      "t2.h": "Feb 2023 — Aug 2024 · Microware — Apprentice (T&D)",
       "t2.p": "First steps structuring corporate training: organizing and running internal trainings, teaching materials, support for ISO 9001 and 20000 audits, and first contact with Power Automate and Bizagi.",
-      "t3.h": "2024 — present · Microware — Training & Development Analyst",
+      "t3.h": "Jul 2024 — present · Microware — Training & Development Analyst",
       "t3.p": `Automations with Power Automate and Bizagi that cut manual work time by ~40%; support for ISO 9001, 20000 and 27001 audits; KPI analysis on LMS platforms and BPMN process modeling. This is where I built <strong>eTreinamentos</strong> and shipped it to production.`,
       "t4.h": "Present · Junior Developer",
       "t4.p": "APIs with Java 25 and Spring Boot — authentication, role-based authorization, automated tests, SBOM — plus full-stack with Next.js and PostgreSQL. Open evolution on GitHub.",
@@ -93,8 +84,9 @@ agora : <span class="t-good">78%</span>  <span class="t-dim">-- expiration alert
       c1: "ISO/IEC 27001:2022 Lead Auditor", c2: "Prompt Engineering in ChatGPT",
       c3: "Cyber Defense Technologist · Estácio", "c.cert": "certification",
       "stack.title": "Stack & tools", "stack.data": "Data", "stack.tools": "Tools",
-      "stack.study": "Currently studying", "stack.oo": "Advanced OOP",
-      "serv.tag": "SERVICES · FREELANCE", "serv.title": "Need to get an idea off the paper?",
+      "stack.sec": "Security", "stack.study": "Currently studying", "stack.oo": "Advanced OOP",
+      "serv.tag": "SERVICES · FREELANCE", "serv.status": "Available now — APIs, web systems and automations",
+      "serv.title": "Need to get an idea off the paper?",
       "serv.lead": "Beyond full-time opportunities, I take on lean freelance projects with clear communication and delivery agreed from day one.",
       "sv1.h": "APIs & back-end",
       "sv1.p": "REST APIs with Java/Spring Boot or Python: authentication, integrations and business rules, secure by design.",
@@ -110,14 +102,14 @@ agora : <span class="t-good">78%</span>  <span class="t-dim">-- expiration alert
       "serv.cta": "Request a quote",
       "cont.tag": "CONTACT", "cont.title": "Let's talk.",
       "cont.p": "If you recruit and are looking for a junior with a solid foundation and a security edge — or if you need a well-executed freelance project — write to me. I reply fast.",
-      "ch.email": "E-mail",
+      "ch.email": "E-mail", "ch.wa": "chat now →", "cont.cv": "Download résumé (PDF) ↓",
       "cont.loc": "Niterói · RJ — available for remote roles across Brazil.",
       "form.name": "Name", "form.email": "E-mail", "form.type": "Reason for contact", "form.msg": "Message",
       opt1: "Job opportunity (recruiting)", opt2: "Freelance project", opt3: "Other",
       "ph.name": "Your name", "ph.email": "you@company.com",
       "ph.msg": "Tell me a bit about the opportunity or project...",
       "form.send": "Send message",
-      "form.hint": "Submitting opens your e-mail app with everything filled in — nothing is stored on this site.",
+      "form.hint": "Submitting opens your e-mail app with everything filled in — no form data is stored on this site; theme and language preferences stay only in your browser.",
       "foot.p": `© <span id="year">2026</span> João Andrade — designed and developed by me, from layout to deploy.`,
       "foot.top": "Back to top ↑",
     },
@@ -130,8 +122,8 @@ agora : <span class="t-good">78%</span>  <span class="t-dim">-- expiration alert
       "a11y.theme": "Alternar tema oscuro/claro", "a11y.menu": "Abrir menú",
       "a11y.carousel": "Carrusel 3D de proyectos", "a11y.prev": "Girar a la tarjeta anterior", "a11y.next": "Girar a la siguiente tarjeta",
       "hero.eyebrow": "// DESARROLLADOR JÚNIOR · SEGURIDAD DE LA INFORMACIÓN",
-      "hero.subtitle": `Construyo software con base sólida: <strong>backend seguro</strong>, código limpio y resultados medibles. Vengo del área de <strong>Entrenamiento &amp; Desarrollo y GRC</strong> — más de tres años entre auditorías ISO, procesos y personas — y de allí traje el hábito de observar primero y resolver con precisión.`,
-      "hero.cta1": "Ver proyectos", "hero.cta2": "Contáctame",
+      "hero.subtitle": `Construyo software con base sólida: <strong>backend seguro</strong>, código limpio y resultados medibles. Vengo del área de <strong>Entrenamiento &amp; Desarrollo y GRC</strong> — casi cuatro años entre auditorías ISO, procesos y personas — y de allí traje el hábito de observar primero y resolver con precisión.`,
+      "hero.cta1": "Ver proyectos", "hero.cta2": "Contáctame", "hero.cta3": "Descargar CV ↓",
       "hero.loc": "Niterói · RJ — disponible para remoto",
       "term.hero": `&gt; booting owl.sys...
 
@@ -152,7 +144,7 @@ STATUS   : <span class="t-status">● ONLINE</span>
       "sobre.tag": "SOBRE",
       "sobre.title": `El código seguro comienza con<br />decisiones bien observadas.`,
       "sobre.p1": `Soy desarrollador júnior enfocado en <strong>backend y seguridad de la información</strong>, tecnólogo en <strong>Defensa Cibernética</strong> (Estácio). Trabajo con Java, Spring Boot, Python y SQL construyendo sistemas <em>secure by design</em>: autenticación, autorización por roles, pruebas automatizadas y análisis de dependencias desde el primer commit.`,
-      "sobre.p2": `Mi origen está en <strong>Entrenamiento &amp; Desarrollo y GRC</strong>: más de tres años en Microware Tecnologia de Informação, apoyando auditorías <strong>ISO 9001, ISO/IEC 20000 e ISO/IEC 27001</strong> — certificado como <strong>Auditor Líder ISO/IEC 27001:2022</strong>. Conviviendo con procesos manuales nació <a href="#destaque" class="link-strong">eTreinamentos</a>, el sistema que desarrollé desde cero y que hoy está en producción generando resultados medibles.`,
+      "sobre.p2": `Mi origen está en <strong>Entrenamiento &amp; Desarrollo y GRC</strong>: casi cuatro años en Microware Tecnologia de Informação, apoyando auditorías <strong>ISO 9001, ISO/IEC 20000 e ISO/IEC 27001</strong> — certificado como <strong>Auditor Líder ISO/IEC 27001:2022</strong>. Conviviendo con procesos manuales nació <a href="#destaque" class="link-strong">eTreinamentos</a>, el sistema que desarrollé desde cero y que hoy está en producción generando resultados medibles.`,
       "sobre.quote": "“Ve en la oscuridad. No parpadea antes de decidir. Vuela en silencio.”",
       "owl.title": "Por qué el búho",
       "owl.p": `Visión que ve lo que pasa desapercibido, atención total antes de actuar y presencia silenciosa y certera. Así pienso la seguridad y el código: <strong>observar primero, atacar el problema con precisión</strong>.`,
@@ -182,26 +174,17 @@ agora : <span class="t-good">78%</span>  <span class="t-dim">-- alertas de venci
       "s2.metric": "secure by design",
       "s3.desc": "Kanban colaborativo en tiempo real con WebSocket/STOMP y autenticación JWT.",
       "s3.metric": "tiempo real",
-      "s4.kicker": "diferencial", "s4.title": "Seguridad de la Información",
-      "s4.desc": "Seguridad desde el primer commit: autenticación, roles, dependencias auditadas.",
-      "s4.metric": "ve en la oscuridad",
-      "s5.kicker": "estudios", "s5.title": "Java y POO → DevOps",
-      "s5.desc": "Fundamentos sólidos de orientación a objetos hoy; pipelines e infraestructura mañana.",
-      "s5.metric": "siempre aprendiendo",
-      "s6.kicker": "freelance", "s6.title": "Disponible para proyectos",
-      "s6.desc": "APIs, sistemas web y automatizaciones con alcance claro y entrega acordada.",
-      "s6.cta": "pedir presupuesto →",
       "s7.kicker": "estás en él", "s7.title": "Este portafolio",
-      "s7.desc": "Landing page construida desde cero: HTML5, CSS3 y JavaScript puros — del layout a los componentes 3D, todo escrito a mano.",
+      "s7.desc": "Landing page en HTML5, CSS3 y JavaScript puros, con i18n PT/EN/ES; el carrusel 3D, el borde neón y la banda kinetic son ports escritos a mano del kit open-source Originkit.",
       "s7.metric": "0 dependencias",
       "proj.hint": "arrastra para girar · haz clic en las flechas", "proj.profile": "perfil completo en GitHub",
       "traj.tag": "TRAYECTORIA Y ESTUDIOS",
       "traj.title": `De T&amp;D al desarrollo,<br />sin perder el foco en las personas.`,
-      "t1.h": "2022 — 2024 · Tecnólogo en Defensa Cibernética",
+      "t1.h": "ene 2022 — dic 2024 · Tecnólogo en Defensa Cibernética",
       "t1.p": "Estácio. La base en seguridad, redes y gestión de riesgos — el terreno donde nació el desarrollador.",
-      "t2.h": "2023 — 2024 · Microware — Aprendiz (T&D)",
+      "t2.h": "feb 2023 — ago 2024 · Microware — Aprendiz (T&D)",
       "t2.p": "Primeros pasos en la estructuración de entrenamientos corporativos: organización y ejecución de entrenamientos internos, materiales didácticos, apoyo a auditorías ISO 9001 y 20000 y primer contacto con Power Automate y Bizagi.",
-      "t3.h": "2024 — actual · Microware — Analista de Entrenamiento y Desarrollo",
+      "t3.h": "jul 2024 — actual · Microware — Analista de Entrenamiento y Desarrollo",
       "t3.p": `Automatizaciones con Power Automate y Bizagi que redujeron ~40% el tiempo de actividades manuales; apoyo a auditorías ISO 9001, 20000 y 27001; análisis de KPIs en plataformas EAD y modelado de procesos en BPMN. Fue aquí donde desarrollé y puse en producción <strong>eTreinamentos</strong>.`,
       "t4.h": "Actual · Desarrollador Júnior",
       "t4.p": "APIs con Java 25 y Spring Boot — autenticación, autorización por roles, pruebas automatizadas, SBOM — y full-stack con Next.js y PostgreSQL. Evolución abierta en GitHub.",
@@ -210,8 +193,9 @@ agora : <span class="t-good">78%</span>  <span class="t-dim">-- alertas de venci
       c1: "Auditor Líder ISO/IEC 27001:2022", c2: "Prompt Engineering en ChatGPT",
       c3: "Tecnólogo en Defensa Cibernética · Estácio", "c.cert": "certificación",
       "stack.title": "Stack y herramientas", "stack.data": "Datos", "stack.tools": "Herramientas",
-      "stack.study": "En estudio", "stack.oo": "POO avanzada",
-      "serv.tag": "SERVICIOS · FREELANCE", "serv.title": "¿Necesitas sacar una idea del papel?",
+      "stack.sec": "Seguridad", "stack.study": "En estudio", "stack.oo": "POO avanzada",
+      "serv.tag": "SERVICIOS · FREELANCE", "serv.status": "Disponible ahora — APIs, sistemas web y automatizaciones",
+      "serv.title": "¿Necesitas sacar una idea del papel?",
       "serv.lead": "Además de las oportunidades formales, trabajo como freelancer en proyectos acotados, con comunicación clara y entrega acordada desde el inicio.",
       "sv1.h": "APIs y back-end",
       "sv1.p": "APIs REST con Java/Spring Boot o Python: autenticación, integraciones y reglas de negocio, con seguridad desde el diseño.",
@@ -227,14 +211,14 @@ agora : <span class="t-good">78%</span>  <span class="t-dim">-- alertas de venci
       "serv.cta": "Pedir presupuesto",
       "cont.tag": "CONTACTO", "cont.title": "Hablemos.",
       "cont.p": "Si reclutas y buscas un júnior con base sólida y diferencial en seguridad — o si necesitas un proyecto freelance bien ejecutado — escríbeme. Respondo rápido.",
-      "ch.email": "E-mail",
+      "ch.email": "E-mail", "ch.wa": "escribir ahora →", "cont.cv": "Descargar CV (PDF) ↓",
       "cont.loc": "Niterói · RJ — disponible para vacantes remotas en todo Brasil.",
       "form.name": "Nombre", "form.email": "E-mail", "form.type": "Motivo del contacto", "form.msg": "Mensaje",
       opt1: "Oportunidad de trabajo (reclutamiento)", opt2: "Proyecto freelance", opt3: "Otro asunto",
       "ph.name": "Tu nombre", "ph.email": "tu@empresa.com",
       "ph.msg": "Cuéntame un poco sobre la oportunidad o proyecto...",
       "form.send": "Enviar mensaje",
-      "form.hint": "El envío abre tu aplicación de correo con todo completado — nada se almacena en este sitio.",
+      "form.hint": "El envío abre tu aplicación de correo con todo completado — ningún dato del formulario se almacena en este sitio; el tema y el idioma quedan guardados solo en tu navegador.",
       "foot.p": `© <span id="year">2026</span> João Andrade — diseñado y desarrollado por mí, del layout al deploy.`,
       "foot.top": "Volver arriba ↑",
     },
@@ -272,9 +256,11 @@ agora : <span class="t-good">78%</span>  <span class="t-dim">-- alertas de venci
       const y = document.getElementById("year");
       if (y) y.textContent = new Date().getFullYear();
     }
-    document.querySelectorAll(".lang__btn").forEach((b) =>
-      b.classList.toggle("is-active", b.getAttribute("data-lang") === lang)
-    );
+    document.querySelectorAll(".lang__btn").forEach((b) => {
+      const active = b.getAttribute("data-lang") === lang;
+      b.classList.toggle("is-active", active);
+      b.setAttribute("aria-pressed", String(active));
+    });
   }
 
   const switcher = document.getElementById("langSwitch");
@@ -288,6 +274,6 @@ agora : <span class="t-good">78%</span>  <span class="t-dim">-- alertas de venci
     });
   }
 
-  const saved = store.get();
-  if (saved && saved !== "pt") apply(saved);
+  /* aplica também para PT: sincroniza lang do <html> e aria-pressed dos botões */
+  apply(store.get() || "pt");
 })();
