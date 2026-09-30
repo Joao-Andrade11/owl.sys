@@ -5,7 +5,7 @@
 (function () {
   const I18N = {
     en: {
-      "doc.title": "João Andrade — Junior Developer | Information Security & GRC",
+      "doc.title": "João Andrade — Junior Dev · Information Security & GRC",
       "doc.meta": "João Andrade, junior developer with an edge in Information Security and GRC. ISO/IEC 27001:2022 Lead Auditor, Cyber Defense technologist. Java, Spring Boot, Python and SQL. Creator of eTreinamentos. Open to opportunities and freelance projects.",
       skip: "Skip to content",
       "nav.about": "About", "nav.project": "Featured", "nav.projects": "Projects",
@@ -116,7 +116,7 @@ agora : <span class="t-good">78%</span>  <span class="t-dim">-- expiration alert
       "foot.top": "Back to top ↑",
     },
     es: {
-      "doc.title": "João Andrade — Desarrollador Júnior | Seguridad de la Información y GRC",
+      "doc.title": "João Andrade — Dev Júnior · Seguridad de la Información y GRC",
       "doc.meta": "João Andrade, desarrollador júnior con diferencial en Seguridad de la Información y GRC. Auditor Líder ISO/IEC 27001:2022, tecnólogo en Defensa Cibernética. Java, Spring Boot, Python y SQL. Creador de eTreinamentos. Disponible para oportunidades y proyectos freelance.",
       skip: "Saltar al contenido",
       "nav.about": "Sobre", "nav.project": "Proyecto", "nav.projects": "Proyectos",
