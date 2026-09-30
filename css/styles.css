@@ -168,19 +168,21 @@ section { scroll-margin-top: 88px; }
   position: relative;
   padding: 168px 0 0;
   background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E"),
     radial-gradient(720px 380px at 78% 12%, rgba(20, 184, 166, 0.09), transparent 65%),
     radial-gradient(640px 420px at 12% 30%, rgba(237, 139, 54, 0.08), transparent 60%),
     var(--navy);
 }
+/* anéis de sonar emanando do terminal — a coruja vendo no escuro */
 .hero::before {
   content: "";
   position: absolute; inset: 0;
   background-image:
-    linear-gradient(rgba(241, 245, 249, 0.028) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(241, 245, 249, 0.028) 1px, transparent 1px);
-  background-size: 44px 44px;
-  mask-image: radial-gradient(ellipse 90% 70% at 50% 30%, black 30%, transparent 75%);
-  -webkit-mask-image: radial-gradient(ellipse 90% 70% at 50% 30%, black 30%, transparent 75%);
+    repeating-radial-gradient(circle at 82% 38%,
+      transparent 0 108px,
+      var(--ring-line, rgba(241, 245, 249, 0.05)) 108px 109.5px);
+  mask-image: radial-gradient(ellipse 75% 65% at 80% 40%, black 25%, transparent 78%);
+  -webkit-mask-image: radial-gradient(ellipse 75% 65% at 80% 40%, black 25%, transparent 78%);
   pointer-events: none;
 }
 .hero > .container { position: relative; }
@@ -754,11 +756,7 @@ a.contact__channel:hover { border-color: rgba(237, 139, 54, 0.5); transform: tra
 }
 :root[data-theme="light"] ::selection { background: #c2410c; color: #fff; }
 :root[data-theme="light"] .nav.is-scrolled { background: rgba(247, 242, 234, 0.92); }
-:root[data-theme="light"] .hero::before {
-  background-image:
-    linear-gradient(rgba(120, 84, 30, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(120, 84, 30, 0.06) 1px, transparent 1px);
-}
+:root[data-theme="light"] { --ring-line: rgba(120, 84, 30, 0.09); }
 :root[data-theme="light"] .btn--primary { color: #fff; }
 :root[data-theme="light"] .btn--primary:hover { background: #9a3412; }
 :root[data-theme="light"] .terminal { background: #081c36; }
