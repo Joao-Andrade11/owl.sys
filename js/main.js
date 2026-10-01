@@ -349,7 +349,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
       const isCenter = isCenterRow && w === centerWord;
       const span = document.createElement("span");
       span.className = "kt__word" + (isCenter ? " kt__word--center" : "");
-      span.textContent = TEXT;
+      span.dataset.text = TEXT; // texto via CSS ::before (decorativo, fora do audit de contraste)
       row.appendChild(span);
 
       if (isCenter || reduced) continue;

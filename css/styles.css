@@ -472,6 +472,7 @@ section { scroll-margin-top: 88px; }
   color: rgba(241, 245, 249, 0.13);
   will-change: clip-path;
 }
+.kt__word::before { content: attr(data-text); }
 .kt__word--center { color: var(--amber); }
 
 /* ---------- Trajetória ---------- */
@@ -807,3 +808,6 @@ html, body { overflow-x: clip; }
 
 /* itens de grid podem encolher (pre do terminal não estoura o layout) */
 .hero__grid > *, .feature > *, .about > *, .contact > * { min-width: 0; }
+
+/* contraste AA no seletor de idioma (tema claro) */
+:root[data-theme="light"] .lang__btn.is-active { color: #fffdf8; }
