@@ -153,7 +153,7 @@ section { scroll-margin-top: 88px; }
 }
 
 .hero__head { display: flex; align-items: center; gap: 16px; }
-.hero__head .eyebrow { margin-bottom: 18px; }
+.hero__head .eyebrow { margin-bottom: 18px; min-width: 0; }
 .hero__photo {
   width: 70px; height: 70px; border-radius: 50%;
   object-fit: cover; object-position: 50% 32%;
@@ -795,3 +795,15 @@ a.contact__channel:hover { border-color: rgba(237, 139, 54, 0.5); transform: tra
 main:focus { outline: none; }
 .rc__viewport:focus-visible { outline: 2px solid var(--amber, #ed8b36); outline-offset: 6px; }
 .contact__cv { display: inline-flex; margin: 16px 0 6px; }
+
+/* ---------- Mobile fino (<=520px): navbar sem overflow ---------- */
+html, body { overflow-x: clip; }
+@media (max-width: 520px) {
+  .nav__name { display: none; }
+  .nav__inner { gap: 12px; }
+  .nav__utils { gap: 6px; }
+  .lang__btn { padding: 8px 8px; font-size: 10px; }
+}
+
+/* itens de grid podem encolher (pre do terminal não estoura o layout) */
+.hero__grid > *, .feature > *, .about > *, .contact > * { min-width: 0; }
