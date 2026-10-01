@@ -193,6 +193,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
       } else if (Math.abs(vel) > 0.01) {
         rot += vel * f;
         vel *= 0.94; // decaimento de inércia do original
+        if (Math.abs(vel) < 60) { target = Math.round(rot / angle) * angle; vel = 0; } // snap: para alinhado ao card
       } else if (!reduced && !hovering && now - lastInteract > 2600) {
         rot += degPerSec * f; // rotação automática
       }

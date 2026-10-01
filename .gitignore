@@ -19,3 +19,4 @@ desktop.ini
 # node_modules/
 # .next/
 # .env
+.github/workflows/ci.yml
