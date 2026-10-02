@@ -137,7 +137,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
   const factor = 1 + SPACING * 0.15;
   const degPerSec = SPEED * 6 * 1; // direction: "right"
-  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const reduced = false;
 
   tiltEl.style.transform = `rotateX(${TILT}deg)`;
   viewport.style.perspective = `${PERSPECTIVE}px`;
@@ -239,6 +239,8 @@ document.getElementById("year").textContent = new Date().getFullYear();
   };
   viewport.addEventListener("pointerup", endDrag);
   viewport.addEventListener("pointercancel", endDrag);
+  window.addEventListener("pointerup", endDrag);
+  window.addEventListener("pointercancel", endDrag);
   viewport.addEventListener("dragstart", (e) => e.preventDefault());
 
   /* Pausa a rotação automática enquanto o mouse está em cima */
@@ -296,7 +298,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
   const zoomScalePct = 112;
   const EASE = "ease-in-out";
 
-  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const reduced = false;
 
   const safeRowCount = rowCount % 2 === 0 ? rowCount + 1 : rowCount;
   const centerRow = Math.floor(safeRowCount / 2);
@@ -335,6 +337,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
     const row = document.createElement("div");
     row.className = "kt__row";
     row.style.gap = wordGap + "px";
+    zoomEl.appendChild(row);
 
     const isCenterRow = r === centerRow;
     const distY = r - centerRow;
@@ -377,7 +380,6 @@ document.getElementById("year").textContent = new Date().getFullYear();
       );
     }
 
-    zoomEl.appendChild(row);
 
     if (reduced) continue;
     const x = isCenterRow
@@ -417,7 +419,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
    Aplicado ao terminal do eTreinamentos (seção 02).
    ============================================================ */
 (function initNeonBorder() {
-  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const reduced = false;
   document.querySelectorAll(".terminal").forEach((target) => {
     if (target.parentElement) attachNeon(target);
   });
@@ -586,7 +588,8 @@ document.getElementById("year").textContent = new Date().getFullYear();
     const groupA = makeGroup();
     const groupB = makeGroup();
 
-    let w = 0, h = 0;
+    const r0 = root.getBoundingClientRect();
+    let w = r0.width, h = r0.height;
     if ("ResizeObserver" in window) {
       new ResizeObserver(() => {
         const r = root.getBoundingClientRect();

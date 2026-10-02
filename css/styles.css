@@ -631,7 +631,6 @@ a.contact__channel:hover { border-color: rgba(237, 139, 54, 0.5); transform: tra
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
-  .t-cursor, .pulse-dot { animation: none; }
 }
 
 /* ---------- Responsivo ---------- */
